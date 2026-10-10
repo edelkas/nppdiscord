@@ -2,7 +2,7 @@
 
 These awesome analytics were generated with [Chat Analytics](https://github.com/mlomb/chat-analytics) using the Discord chats scraped via [DiscordChatExporter](https://github.com/tyrrrz/discordchatexporter), which you can find in JSON format [here](https://mega.nz/file/VcAkkJRa#iRyNzPSNpBIfgCt0ACElNic0fa6qZMPJr_2k4cYhLtU).
 
-You may also be interested in [this SQL archive](https://mega.nz/file/FJxFHRTK#Ldmntn72lUE59C4UyVNxEg2pGovVR4yFAMXVkvShtTA) which contains additional fields dumped with [my DCE fork](https://github.com/edelkas/DiscordChatExporter) and converted from JSON to SQL using [dce2sql](https://github.com/edelkas/dce2sql).
+You may also be interested in [this SQL archive](https://mega.nz/file/NQJVnZQD#fh-11AgcHrfqifcZ7twq9fn7rKSEmsjs12h8SLezI8s) which contains additional fields dumped with [my DCE fork](https://github.com/edelkas/DiscordChatExporter) and converted from JSON to SQL using [dce2sql](https://github.com/edelkas/dce2sql).
 
 - [How to export chats](#how-to-export-chats)
    * [Extended info](#extended-info)
@@ -70,7 +70,7 @@ The JSON exports are good for archival, and compatible with other tools, but not
 
 It can be fed arbitrarily many JSON dumps from any number of servers, even multiple files corresponding to the same channel, and it'll update the information without ever removing anything (e.g. messages by deleted users), tracking message edits, and more. It can also recover raw mentions from dumps that excluded / resolved them (due to the `--markdown` flag).
 
-To install it, clone the repo and run `pip install .`, or `pip install '.[all]'` if you need the db drivers. You can find a MySQL dump [here](https://mega.nz/file/FJxFHRTK#Ldmntn72lUE59C4UyVNxEg2pGovVR4yFAMXVkvShtTA).
+To install it, clone the repo and run `pip install .`, or `pip install '.[all]'` if you need the db drivers. You can find a MySQL dump [here](https://mega.nz/file/NQJVnZQD#fh-11AgcHrfqifcZ7twq9fn7rKSEmsjs12h8SLezI8s).
 
 The dump was fed a complete vanilla dump from April 2025, together with an extended dump from September 2026, and finally the complete user list, via the following script:
 
